@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark mode as default */
+    --background: #07574c; /* Very dark teal */
+    --surface: #0f172a;
+    --primary: #07574c; /* Bright teal */
+    --secondary: #818cf8; /* Light indigo */
+    --accent: #fbbf24;
+    --border: #134e4a;
+    --text-main: #f0fdfa;
+    --text-muted: #94a3b8;
+    --card-bg: rgba(15, 23, 42, 0.6);
+    --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  html:not(.dark) {
+    /* Light mode variables */
+    --background: #f0fdfa; /* Ultra light teal */
+    --surface: #ffffff;
+    --primary: #0d9488; /* Deep Tosca/Teal */
+    --secondary: #6366f1; /* Indigo accent */
+    --accent: #f59e0b; /* Amber for contrast */
+    --border: #ccfbf1;
+    --text-main: #134e4a; /* Darkest teal */
+    --text-muted: #475569;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --card-shadow: 0 4px 20px -2px rgba(13, 148, 136, 0.1);
+  }
+
+  body {
+    @apply text-[var(--text-main)] font-sans antialiased transition-colors duration-500;
+    background: linear-gradient(to bottom right, #042f2e, #020617) !important;
+  }
+
+  html:not(.dark) body {
+    background: linear-gradient(to bottom right, #f0fdfa, #d1fae5) !important;
+  }
+
+  ::selection {
+    background-color: rgba(13, 148, 136, 0.2);
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-sans font-bold tracking-tight;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors;
+  }
+}
+
+@layer components {
+  .btn-modern {
+    @apply px-5 py-2.5 bg-[var(--primary)] text-white rounded-xl font-semibold text-sm hover:scale-105 active:scale-95 transition-all shadow-md shadow-teal-500/20;
+  }
+
+  .card-modern {
+    @apply bg-[var(--card-bg)] backdrop-blur-md border border-[var(--border)] rounded-3xl p-6 md:p-8 shadow-[var(--card-shadow)] hover:shadow-xl hover:-translate-y-1 transition-all duration-500;
+  }
+  
+  .nav-pill {
+    @apply px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-300 hover:bg-teal-100 dark:hover:bg-teal-900/30 text-[var(--text-muted)] hover:text-teal-800 dark:hover:text-teal-200;
+  }
+
+  .nav-pill-active {
+    @apply bg-[var(--primary)] text-white shadow-lg shadow-teal-500/20;
+  }
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.015;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.subtle-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(circle at 2px 2px, var(--border) 1px, transparent 0);
+  background-size: 40px 40px;
+  opacity: 0.5;
+}
