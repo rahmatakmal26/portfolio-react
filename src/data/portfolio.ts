@@ -2,7 +2,7 @@ export const portfolioData = {
   personal: {
     name: "Rahmat Akmal",
     title: "AI Engineer | Web Developer",
-    avatar: "/portofolio/assets/images/fotoku1.png",
+    avatar: "/images/fotoku1.png",
     email: "rahmatakmal26@gmail.com",
     phone: "0852-4704-4821",
     birthday: "07 January 2003",
@@ -22,12 +22,12 @@ export const portfolioData = {
     services: [
       {
         title: "AI Engineer",
-        icon: "/portofolio/assets/images/icon-design.svg",
+        icon: "/images/icon-design.svg",
         description: "Mengembangkan chatbot berbasis Artificial Intelligence untuk menganalisis data, menjawab komunikasi secara realtime, serta membantu perusahaan dalam meningkatkan efisiensi layanan dan interaksi dengan pengguna."
       },
       {
         title: "Web Development",
-        icon: "/portofolio/assets/images/icon-dev.svg",
+        icon: "/images/icon-dev.svg",
         description: "Menciptakan situs web yang fungsional dan memberikan pengalaman pengguna yang baik, dengan menyajikan informasi atau layanan secara efektif dan menghasilkan platform online yang tidak hanya menarik secara visual, tetapi juga mudah digunakan."
       }
     ]
@@ -82,55 +82,55 @@ export const portfolioData = {
     {
       title: "Chatbot Akademik",
       category: "Web Development",
-      image: "/portofolio/assets/images/chatbot.png",
+      image: "/images/chatbot.png",
       link: "https://projectchatbot-production.up.railway.app/"
     },
     {
       title: "E-Commerce",
       category: "Web Development",
-      image: "/portofolio/assets/images/e-commerce.jpg",
+      image: "/images/e-commerce.jpg",
       link: "https://tokoserba35k.000webhostapp.com/"
     },
     {
       title: "Portofolio Saya",
       category: "Web Development",
-      image: "/portofolio/assets/images/portofolio.png",
+      image: "/images/portofolio.png",
       link: "https://rahmat-akmal.vercel.app/"
     },
     {
       title: "DataCore AI",
       category: "Web Development",
-      image: "/portofolio/assets/images/datacore.png",
+      image: "/images/datacore.png",
       link: "#"
     },
     {
       title: "Chatbot Seucom Indonesia",
       category: "AI Engineer",
-      image: "/portofolio/assets/images/seucom.png",
+      image: "/images/seucom.png",
       link: "#"
     },
     {
       title: "Chatbot Kemendikdasmen",
       category: "AI Engineer",
-      image: "/portofolio/assets/images/kemendikdasmen.png",
+      image: "/images/kemendikdasmen.png",
       link: "#"
     },
     {
       title: "Chatbot AI Prompt Gate X",
       category: "AI Engineer",
-      image: "/portofolio/assets/images/promptgatex.png",
+      image: "/images/promptgatex.png",
       link: "#"
     },
     {
       title: "SIMRS",
       category: "Web Development",
-      image: "/portofolio/assets/images/simrs.png",
+      image: "/images/simrs.png",
       link: "#"
     },
     {
       title: "Web Kiosk Kejaksaan",
       category: "Web Development",
-      image: "/portofolio/assets/images/webkiosk.png",
+      image: "/images/webkiosk.png",
       link: "#"
     }
   ],
@@ -138,43 +138,43 @@ export const portfolioData = {
     {
       title: "Sertifikat Magang Kerja",
       date: "03 Januari 2025",
-      image: "/portofolio/assets/images/sertifikat-magang.jpg",
+      image: "/images/sertifikat-magang.jpg",
       description: "Sertifikat Ini Diberikan Kepada Peserta Magang MBKM Di PT. Cybers Blitz Nusantara."
     },
     {
       title: "Sertifikat Python",
       date: "28 Februari 2024",
-      image: "/portofolio/assets/images/python.png",
+      image: "/images/python.png",
       description: "Sertifikat Python ini merupakan penghargaan dari Kaggle setelah mengikuti pelatihan Python."
     },
     {
       title: "Sertifikat Praktik Kerja Industri",
       date: "04 Desember 2020",
-      image: "/portofolio/assets/images/pkl.jpg",
+      image: "/images/pkl.jpg",
       description: "Diberikan setelah menyelesaikan program Prakerin di CV. Multimedia."
     },
     {
       title: "Sertifikat Keanggotaan HIMATIF",
       date: "10 Juni 2024",
-      image: "/portofolio/assets/images/Himatif.jpg",
+      image: "/images/Himatif.jpg",
       description: "Diberikan kepada pengurus aktif organisasi HIMATIF."
     },
     {
       title: "Sertifikat Training Dasar Organisasi",
       date: "26 November 2021",
-      image: "/portofolio/assets/images/tdo.jpg",
+      image: "/images/tdo.jpg",
       description: "Pelatihan dasar organisasi tingkat Fakultas Teknik UTU."
     },
     {
       title: "Sertifikat Sosialisasi MBKM",
       date: "07 Mei 2024",
-      image: "/portofolio/assets/images/mbkm.jpg",
+      image: "/images/mbkm.jpg",
       description: "Partisipasi dalam acara Sosialisasi Program MBKM."
     },
     {
       title: "Sertifikat Stadium General",
       date: "07 Februari 2024",
-      image: "/portofolio/assets/images/teknik.png",
+      image: "/images/teknik.png",
       description: "Stadium General Fakultas Teknik dengan tema Optimalisasi Pendidikan Karakter."
     }
   ]
