@@ -66,7 +66,7 @@ export const portfolioData = {
       },
       {
         title: "Maganghub Kemnaker",
-        company: "PT Jazz Azzam Mandiri, Jakarta Selatan",
+        company: "PT Jann Azzam Mandiri, Jakarta Selatan",
         period: "2026",
         description: "Fokus pada pengembangan AI Engineer dan Fullstack Developer, membangun sistem chatbot, analisis data, serta aplikasi web."
       }
