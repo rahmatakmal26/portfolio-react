@@ -149,30 +149,6 @@ export const portfolioData = {
       category: "Web Development",
       image: "/images/webkiosk.png",
       link: "#"
-    },
-    {
-      title: "Mobile App E-Commerce",
-      category: "Mobile Developer",
-      image: "/images/mobile-app.png",
-      link: "#"
-    },
-    {
-      title: "CI/CD Pipeline Automation",
-      category: "DevOps",
-      image: "/images/cicd.png",
-      link: "#"
-    },
-    {
-      title: "Docker Containerization",
-      category: "DevOps",
-      image: "/images/docker.png",
-      link: "#"
-    },
-    {
-      title: "AlmaLinux Server Management",
-      category: "DevOps",
-      image: "/images/almalinux.png",
-      link: "#"
     }
   ],
   certificates: [
