@@ -76,6 +76,12 @@ export const portfolioData = {
       },
       {
         title: "Maganghub Kemnaker",
+        company: "PT. Langit Inovasi Aksi Teknologi, Jakarta Selatan",
+        period: "2025",
+        description: "Fokus pada pengembangan aplikasi dan sistem teknologi inovatif untuk berbagai proyek perusahaan."
+      },
+      {
+        title: "Bekerja",
         company: "PT Jann Azzam Mandiri, Jakarta Selatan",
         period: "2026",
         description: "Fokus pada pengembangan AI Engineer dan Fullstack Developer, membangun sistem chatbot, analisis data, serta aplikasi web."
