@@ -1,7 +1,7 @@
 export const portfolioData = {
   personal: {
     name: "Rahmat Akmal",
-    title: "AI Engineer | Web Developer",
+    title: "AI Engineer | Web Developer | Mobile Developer | DevOps",
     avatar: "/images/fotoku1.png",
     email: "rahmatakmal26@gmail.com",
     phone: "0852-4704-4821",
@@ -29,6 +29,16 @@ export const portfolioData = {
         title: "Web Development",
         icon: "/images/icon-dev.svg",
         description: "Menciptakan situs web yang fungsional dan memberikan pengalaman pengguna yang baik, dengan menyajikan informasi atau layanan secara efektif dan menghasilkan platform online yang tidak hanya menarik secara visual, tetapi juga mudah digunakan."
+      },
+      {
+        title: "Mobile Developer",
+        icon: "/images/icon-dev.svg",
+        description: "Mengembangkan aplikasi mobile yang responsif dan user-friendly untuk platform Android dan iOS dengan menggunakan framework modern seperti Flutter."
+      },
+      {
+        title: "DevOps",
+        icon: "/images/icon-dev.svg",
+        description: "Mengelola infrastruktur, pipeline CI/CD, dan deployment otomatis untuk memastikan aplikasi berjalan dengan efisien, dapat diandalkan, dan terukur dalam lingkungan produksi."
       }
     ]
   },
@@ -75,7 +85,8 @@ export const portfolioData = {
       { name: "Bahasa C++", period: "2021" },
       { name: "HTML, CSS & PHP", period: "2022" },
       { name: "Javascript & Python", period: "2023" },
-      { name: "React, Laravel, Yii2, Django, Flask", period: "2025 — Sekarang" }
+      { name: "React, Laravel, Yii2, Django, Flask", period: "2025 — Sekarang" },
+      { name: "Flutter, PostgreSQL, Docker, AlmaLinux", period: "2025 — Sekarang" }
     ]
   },
   projects: [
@@ -131,6 +142,30 @@ export const portfolioData = {
       title: "Web Kiosk Kejaksaan",
       category: "Web Development",
       image: "/images/webkiosk.png",
+      link: "#"
+    },
+    {
+      title: "Mobile App E-Commerce",
+      category: "Mobile Developer",
+      image: "/images/mobile-app.png",
+      link: "#"
+    },
+    {
+      title: "CI/CD Pipeline Automation",
+      category: "DevOps",
+      image: "/images/cicd.png",
+      link: "#"
+    },
+    {
+      title: "Docker Containerization",
+      category: "DevOps",
+      image: "/images/docker.png",
+      link: "#"
+    },
+    {
+      title: "AlmaLinux Server Management",
+      category: "DevOps",
+      image: "/images/almalinux.png",
       link: "#"
     }
   ],

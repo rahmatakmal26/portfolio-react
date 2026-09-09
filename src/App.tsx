@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Mail, Phone, Calendar, MapPin,
   Facebook, Twitter, Instagram, Github,
-  ExternalLink, BrainCircuit, Globe,
+  ExternalLink, BrainCircuit, Globe, Server, Smartphone,
   ArrowUpRight, Command, Layout, Code, Award, Map, Sun, Moon, X
 } from 'lucide-react';
 import { portfolioData } from './data/portfolio';
@@ -98,13 +98,15 @@ const App: React.FC = () => {
                   {portfolioData.about.services.map((service, i) => (
                     <div key={i} className="group cursor-default">
                       <div className="flex items-center gap-4 mb-3">
-                        <div className={cn(
-                          "p-3 rounded-xl transition-all duration-300",
-                          service.title === "AI Engineer"
-                            ? "bg-[var(--primary)] text-white dark:bg-slate-800 dark:text-white group-hover:bg-teal-600 group-hover:text-white dark:group-hover:bg-accent"
-                            : "bg-[var(--primary)] text-white dark:bg-slate-800 dark:text-white group-hover:bg-teal-600 group-hover:text-white dark:group-hover:bg-accent"
-                        )}>
-                          {service.title === "AI Engineer" ? <BrainCircuit size={20} /> : <Globe size={20} />}
+                        <div className="p-3 rounded-xl transition-all duration-300 bg-[var(--primary)] text-white dark:bg-slate-800 dark:text-white group-hover:bg-teal-600 group-hover:text-white dark:group-hover:bg-accent">
+                          {(() => {
+                            switch (service.title) {
+                              case "AI Engineer": return <BrainCircuit size={20} />;
+                              case "DevOps": return <Server size={20} />;
+                              case "Mobile Developer": return <Smartphone size={20} />;
+                              default: return <Globe size={20} />;
+                            }
+                          })()}
                         </div>
                         <h4 className="text-lg font-bold group-hover:text-accent transition-colors">
                           {service.title}
